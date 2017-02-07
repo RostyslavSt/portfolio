@@ -1,4 +1,4 @@
-Module 1 summary
+#Module 1 summary
 var robot;
 Напишите классы описывающие битву роботов
 function Battleground() {
