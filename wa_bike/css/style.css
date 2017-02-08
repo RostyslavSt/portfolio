@@ -1,0 +1,340 @@
+.section-block {
+	height: 90%;
+	max-height: 90%;
+}
+.sub-block-1-v {
+	height: 100%;
+	max-height: 100%;
+}
+.sub-block-1 {
+	height: 100%;
+	max-height: 100%;
+}
+.logo-small {
+	margin: 67px 0 27px;
+	max-width: 100%;
+}
+
+
+/***HEADER***/
+.header {
+	background-image: url(../img/bike_1.jpg);
+}
+.menu {
+	padding-top: 20px;
+	max-width: 620px;
+	display: flex;
+	margin: 0 auto;
+	justify-content: space-between;
+	align-items: center;
+}
+.logo-img {
+	display: block;
+	padding-top: 0;
+	background-image: url(../img/logo.png);
+	width: 95px;
+	height: 85px;
+	background-position: center;
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+.menu li a {
+	display: block;
+	font-size: 13px;
+	font-weight: bold;
+	color: #4d4959;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+
+/**SECTION NEW GENERATION**/
+.generation-new {
+	background-color: #f7f7f7;
+	text-align: center;
+}
+.generation-img {
+	margin: 118px 0 28px;
+}
+
+.generation-title {
+	text-transform: uppercase;
+	font-size: 18px;
+	font-weight: bold;
+	margin-bottom: 30px;
+	color: #353738;
+}
+.generation-text {
+	font-size: 18px;
+	padding-bottom: 143px;
+	color: #848789;
+}
+
+
+.bike-description {
+	text-align: center;
+}
+/***<SECTION Vintage**/
+
+.vintage-bike-img {
+	background-image: url(../img/bike_2.jpg);
+	position: relative;
+}
+.small-bike {
+	text-align: center;
+	position: absolute;
+	width: 100%;
+	display: block;
+	top: calc(50% - 60px);
+}
+.vintage-bike-text {
+	max-height: 66.6666%;
+	height: 66.6666%;
+	min-height: 230px;
+	position: relative;
+}
+/*.vintage-img {
+	margin: 67px 0 27px;
+	max-width: 100%;
+}*/
+/*.bike-seat {
+	height: 100%;
+	max-height: 100%;
+}*/
+
+/***<SECTION BORIOSA***/
+
+.boriosa-bike {
+	height: 100%;
+}
+.boriosa-bike-img {
+	background-image: url(../img/boriosa_4.jpg);
+	position: relative;
+}
+.small-vintage {
+	display: block;
+	text-align: center;
+	position: absolute;
+	width: 100%;
+	display: block;
+	top: calc(50% - 75px);
+}
+.boriosa-bike-text {
+	position: relative;
+}
+/*.boriosa-img {
+	margin: 67px 0 27px;
+	max-width: 100%;
+}*/
+.bike-seat-img {
+	background-image: url(../img/bike_5.jpg);
+}
+
+/***<SECTION RETRO BIKE***/
+
+.sub-block-retro {
+	height: 100%;
+	max-height: 100%;
+}
+.retro-bike {
+	position: relative;
+}
+/*.retro-img {
+	margin: 67px 0 27px;
+	max-width: 100%;
+}*/
+.retro-bike-text {
+	position: relative;
+}
+.bike-description {
+	height: 100%;
+	max-height: 100%;
+}
+
+/***<SECTION NEWYORK***/
+.new-york {
+	background-color: #f7f7f7;
+	/*background-color: red;*/
+	text-align: center;
+}
+.new-york-twitter {
+	padding: 124px 0 33px;
+}
+.new-york-content {
+	margin: 0 auto;
+	max-width: 1038px;
+}
+.new-york-content h4 {
+	margin-bottom: 24px;
+}
+.new-york-content span {
+	color: #848789;
+}
+.new-york-content p {
+	font-size: 24px;
+	font-style: italic;
+	color: #848789;
+	margin-bottom: 98px;
+}
+.new-york-points {
+	margin-bottom: 65px;
+}
+
+/***<SECTION SHOP NOW***/
+.img-bg {
+	display: block;
+}
+
+.sub-block {
+	height: 100%;
+	max-height: 100%;
+	position: relative;
+	overflow: hidden;
+}
+.sub-block-half-mask {
+	position: relative;
+	overflow: hidden;
+}
+.sub-block:hover > .mask-block {
+	top: 0;
+}
+.sub-block-half-mask:hover > .mask-block {
+	top: 0;
+}
+
+/*--MASK--*/
+.mask-block {
+	position: absolute;
+	max-width: 100%;
+    width: 100%;
+    height: 100%;
+    transition: top 0.5s;
+    top: -100%;
+}
+.bg-mask {
+	display: block;
+	max-width: 100%;
+    width: 100%;
+    height: 100%;
+	background: rgba(97,169,145, 0.8);
+}
+.mask-img {
+	position: absolute;
+	text-align: center;
+	margin: 0 auto;
+	width: 100%;
+	top: 50%;
+	margin-top: -1.5em;
+}
+.mask-img h3 {
+	font-size: 14px;
+	text-transform: uppercase;
+	margin-top: 5px;
+}
+.mask-img h3 a {
+	color: #fff;
+}
+
+/*--MASK--*/
+
+
+/***<SECTION DISCOVER SHOP***/
+.discover-shop {
+	background-color: #282f35;
+	height: auto;
+}
+.discover-shop-button {
+	margin: 0 auto;
+	padding: 75px 0;
+	text-align: center;
+
+}
+.discover-shop-button a {
+	border: 1px solid #94979a;
+	padding: 18px 56px;
+	color: #fff;
+	font-size: 14px;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+/***<SECTION <SECTION FEEDBACK***/
+.feedback-logo-div {
+	margin: 102px auto 32px 0;
+}
+.feedback-logo-img {
+	display: block;
+	padding-top: 0;
+	background-image: url(../img/logo.png);
+	width: 95px;
+	height: 85px;
+	background-position: center;
+	background-size: contain;
+	background-repeat: no-repeat;
+	margin: 0 auto;
+}
+.feedback-title {
+	text-align: center;
+	font-size: 24px;
+	font-style: italic;
+	color: #848789;
+	margin: 30px 0 30px;
+}
+.form-feedback {
+	display: flex;
+	margin: 0 auto;
+	margin-bottom: 108px;
+	justify-content: center;
+}
+.feedback-email {
+	color: #848789;
+	font-size: 20px;
+	font-style: italic;
+	width: 400px;
+	height: 70px;
+	box-sizing: border-box;
+	padding-left: 25px;
+}
+.go-button {
+	box-sizing: border-box;
+	font-size: 24px;
+	text-transform: uppercase;
+	width: 126px;
+	height: 70px;
+	background-color: #64c29e;
+	color: #fff;
+	border: none;
+	box-sizing: border-box;
+	margin-left: 10px;
+	cursor: pointer;
+}
+
+/***FOOTER***/
+.footer {
+	background-color: #f7f7f7;
+	color: #848789;
+}
+.footer-block {
+	display: flex;
+	justify-content: space-around;
+	align-items: flex-end;
+}
+.address p:first-child {
+	font-weight: bold;
+}
+.footer-block {
+	padding: 96px 0 96px;
+	max-width: 1108px;
+	margin: 0 auto;
+}
+.social-icons {
+	
+}
+.social-icons > a {
+	margin: 0 7px 0;
+}
+.author {
+	display: flex;
+}
+.author span {
+	align-self: center;
+	margin-right: 7px;
+}
