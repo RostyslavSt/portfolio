@@ -1,0 +1,32 @@
+.main-logo{
+	width: 197px;// height is not neccesary
+	float: left;
+}
+.nav{
+	float: right;
+	@include clearfix();
+	&-list{
+		list-style:none;
+		padding: 0;
+		margin: 0;
+		/**/
+		font-size: 0; // remove default space betweeen inline-block items
+		text-align: right;
+	}
+	&-item{
+		display: inline-block;
+		padding: 25px 0 0 40px;// 25px top for vertical-align
+		font-size: 15px;
+		line-height: 1; // because those lis haven't line break
+	}
+	&-link{
+		@include no-decor;
+		color: $textColor;
+	}
+	&-link.current-page{
+		color: $yellowColor;
+	}
+	&-link:hover{
+		color: $yellowColor;
+	}
+}

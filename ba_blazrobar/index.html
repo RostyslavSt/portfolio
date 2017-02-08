@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<!--[if lte IE 9]>
+<html lang="en" class="old-ie"> <![endif]-->
+<!--[if gt IE 9]><!-->
+<html lang="en" class="no-js"><!--<![endif]-->
+
+<head>
+    <meta charset="UTF-8">
+    <title>Landing Page</title>
+
+    <meta name="description" content=""/>
+    <meta name="keywords" content=""/>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <meta name="HandheldFriendly" content="true"/>
+
+    <script>
+        var htmlEl = document.getElementsByTagName('html')[0];										<!--проверяем работает или не работает js -->
+        htmlEl.className = htmlEl.className.replace(/\bno-js\b/, 'has-js');
+    </script>
+
+	<link href='https://fonts.googleapis.com/css?family=Quicksand:700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/base.min.css">
+</head>
+<body>
+<div class="wrapper">
+   <!-- <nav class="navbar navbar-inverse">
+	  <div class="container-fluid">
+		<div class="navbar-header">
+		  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+			<span class="sr-only">Toggle navigation</span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+		  </button>
+		</div>
+
+		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+		  <ul class="nav navbar-nav">
+			<li class="active"><a href="#">PSD WEBSITES<span class="sr-only">(current)</span></a></li>
+			<li><a href="#">UI KITS</a></li>
+			<li><a href="#">PREMIUM PSD FILES</a></li>
+			<li><a href="#">ABOUT</a></li>
+			<li><a href="#">BLOG</a></li>
+		  </ul>
+		</div>
+	  </div>
+	</nav> -->
+
+	<!--пишем меню не на бутстрапе -->
+	<header class='header'>
+		<div class="container">
+			<ul class="header-nav clearfix">
+				<li class="header-nav-item">
+					<a class="header-nav-link" href="#">Item 1</a>
+
+					<ul class="dropdown-nav">
+						<li class="dropdown-nav-item">
+							<a class="dropdown-nav-link" href="#">Item 1.1</a>
+
+							<ul class="dropdown-nav">
+								<li class="dropdown-nav-item">
+									<a class="dropdown-nav-link" href="#">Item 1.1.1</a>
+								</li>
+								<li class="dropdown-nav-item">
+									<a class="dropdown-nav-link" href="#">Item 1.1.2</a>
+								</li>
+								<li class="dropdown-nav-item">
+									<a class="dropdown-nav-link" href="#">Item 1.1.3</a>
+								</li>
+							</ul>
+						</li>
+						<li class="dropdown-nav-item">
+							<a class="dropdown-nav-link" href="#">Item 1.1</a>
+
+							<ul class="dropdown-nav">
+								<li class="dropdown-nav-item">
+									<a class="dropdown-nav-link" href="#">Item 1.1</a>
+								</li>
+								<li class="dropdown-nav-item">
+									<a class="dropdown-nav-link" href="#">Item 1.1</a>
+								</li>
+								<li class="dropdown-nav-item">
+									<a class="dropdown-nav-link" href="#">Item 1.1</a>
+								</li>
+							</ul>
+						</li>
+						<li class="dropdown-nav-item">
+							<a class="dropdown-nav-link" href="#">Item 1.1</a>
+
+							<ul class="dropdown-nav">
+								<li class="dropdown-nav-item">
+									<a class="dropdown-nav-link" href="#">Item 1.1</a>
+								</li>
+								<li class="dropdown-nav-item">
+									<a class="dropdown-nav-link" href="#">Item 1.1</a>
+								</li>
+								<li class="dropdown-nav-item">
+									<a class="dropdown-nav-link" href="#">Item 1.1</a>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+				<li class="header-nav-item">
+					<a class="header-nav-link" href="#">Item 2</a>
+				</li>
+				<li class="header-nav-item">
+					<a class="header-nav-link" href="#">Item 3</a>
+				</li>
+				<li class="header-nav-item">
+					<a class="header-nav-link" href="#">Item 4</a>
+				</li>
+				<li class="header-nav-item">
+					<a class="header-nav-link" href="#">Item 5</a>
+				</li>
+			</ul>
+		</div>
+	</header>
+
+    <main class="page-content">
+		<div class="slider">																<!-- Вставили свайпер для листание слайдов -->
+			<div class="swiper-container">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide">
+						<div class="slide-inner">
+							<p class="slide-title">Awesome Free PSD templates & Resources</p>
+							<a class="slide-link"  target="_blank" href="#">www.BlazRobar.com</a>
+						</div>
+					</div>
+					<div class="swiper-slide">
+						<div class="slide-inner">
+							<p class="slide-title">Slide 2<p>
+							<a class="slide-link"  target="_blank" href="#">www.BlazRobar.com</a>
+						</div>
+					</div>
+				</div>
+			</div>	
+		</div><!-- / .slider -->
+		
+		<div class="text-block">
+			<div class="cell">
+				<p class="text">I'm like the Robin Hood of PSD files</p>
+			</div>
+			<div class="link-container cell">
+				<a title="link to post" class="link" href="#">></a>
+			</div>
+		</div><!-- / .text-block-->
+		
+		<div class="gallery">
+			<div class="gallery-item cell text-item">
+				<a title="link to post" class="link" href="#">></a>
+			</div>
+			<div class="gallery-item cell">
+				<img class="gallery-image" alt="Content image 1" src="images/content/content-image-1.jpg">
+			</div>
+			<div class="gallery-item cell">
+				<img class="gallery-image" alt="Content image 2" src="images/content/content-image-2.jpg">
+			</div>
+		</div><!-- / .gallery -->
+		
+		<div class="text-content container">
+			<h1 class="page-heading">BlazRobar.com</h1>
+			
+			<div class="row">
+				<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+					<p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vehicula ipsum non leo tristique eget facilisis lacus commodo. Curabitur vitae justo lorem, non ornare nibh. Pellentesque pretium, tellus ac ultrices faucibus, nibh mauris dapibus lorem, vitae viverra nisl elit sit amet libero. Nam eu blandit risus.</p>
+					<p class="text">Phasellus imperdiet mattis nulla. Integer gravida imperdiet congue. Proin vitae pretium augue. Donec est sem, mattis et blandit ac, blandit at arcu. Donec tempus tincidunt suscipit. Suspendisse eu vulputate lacus.</p>
+				</div>
+				<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+					<p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vehicula ipsum non leo tristique eget facilisis lacus commodo. Curabitur vitae justo lorem, non ornare nibh. Pellentesque pretium, tellus ac ultrices faucibus, nibh mauris dapibus lorem, vitae viverra nisl elit sit amet libero. Nam eu blandit risus. </p>
+					<p class="text">Phasellus imperdiet mattis nulla. Integer gravida imperdiet congue. Proin vitae pretium augue. Donec est sem, mattis et blandit ac, blandit at arcu. Donec tempus tincidunt suscipit. Suspendisse eu vulputate lacus.</p>
+				</div>
+			</div>	
+		</div><!-- / .text-content -->
+		
+    </main><!-- / .page-content -->
+</div>
+														<!-- создали папап -->
+<!-- <div class="overlay">
+	<div class="popup">
+		<header class="popup-header">
+			Popup header
+		</header>
+		<div class="popup-content">
+			Popup content
+		</div>
+		<footer class="popup-footer">
+			Popup footer
+		</footer>
+	</div>
+</div>
+ -->
+ <div class="is-no-js">
+    <div class="base-container">
+        <p class="message">JavaScript appears to be disabled. If possible, we recommend enabling JavaScript for an improved browsing experience.</p>
+    </div>
+</div>
+
+<script src="js/base.min.js"></script>
+
+</body>
+</html>
