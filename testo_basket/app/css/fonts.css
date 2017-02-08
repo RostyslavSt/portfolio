@@ -1,9 +1,0 @@
-@font-face {
-	font-family: 'SegoeWPN';
-	src: url('../fonts/SegoeWPN.eot');
-	src: url('/fonts/SegoeWPN.eot?#iefix') format('embedded-opentype'),
-		 url('/fonts/SegoeWPN.woff') format('woff'),
-		 url('/fonts/SegoeWPN.ttf') format('truetype');
-	font-style: normal;
-	font-weight: normal;
-}
