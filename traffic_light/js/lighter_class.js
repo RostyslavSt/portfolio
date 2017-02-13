@@ -1,18 +1,28 @@
-const Lighter = function (rootElement, timeInterval) {
-    let interval = null;
-    let i = 0;
-    this.container = document.querySelector(rootElement);
-    this.circles = [];
-    this.isOn = false;
+class LighterClass {
+    constructor(rootElement, timeInterval) {
+        this.container = document.querySelector(rootElement);
+        this.circles = [];
+        this.isOn = false;
+        this.container.classList.add('lighter');
+        this.switcher = null;
+        this.timeInterval = timeInterval;
+        this.interval = null;
 
-    this.container.classList.add('lighter');
+        this.render();
+        this.handleEvents();
 
-    this.render = function () {
+        if (this.isOn) {
+            this.addInterval();
+        }
+
+    }
+
+    render() {
         this.createButton();
         this.createLights();
     };
 
-    this.createButton = function () {
+    createButton() {
         this.switcher = document.createElement('div');
 
         this.button = document.createElement('button');
@@ -26,7 +36,7 @@ const Lighter = function (rootElement, timeInterval) {
         this.container.appendChild(this.switcher);
     }
 
-    this.createLights = function () {
+    createLights() {
         for (let i = 0; i < 3; i++) {
             let element = document.createElement('div');
 
@@ -41,7 +51,7 @@ const Lighter = function (rootElement, timeInterval) {
         this.circles[2].classList.add('lighter__circle_green');
     }
 
-    this.handleEvents = function () {
+    handleEvents() {
         this.circles.forEach((el) => {
             el.addEventListener('click', () => {
                 if (this.isOn) {
@@ -63,39 +73,31 @@ const Lighter = function (rootElement, timeInterval) {
         })
     }
 
-    this.switchOff = function () {
+    switchOff() {
         this.circles.forEach((el) => {
             el.classList.remove('active');
         })
     }
-    this.changeColor = function (el) {
+    changeColor(el) {
         this.switchOff();
         el.classList.add('active');
     }
 
-    this.addInterval = function () {
-        interval = setInterval(() => {
+    addInterval() {
+        let i = 0;
+        this.interval = setInterval(() => {
             this.changeColor(this.circles[i]);
             if (i < 2) {
                 i++;
             } else {
                 i = 0;
             }
-        }, timeInterval || 1000);
+        }, this.timeInterval || 1000);
     }
 
-    this.killInterval = function () {
-        clearInterval(interval);
+    killInterval() {
+        clearInterval(this.interval);
     };
+}
 
-    this.render();
-    this.handleEvents();
-    if (this.isOn) {
-        this.addInterval();
-    }
-};
-
-const lighter = new Lighter('.lighter-wrapper', 300);
-
-// const lighter2 = new Lighter('.lighter-wrapper-2', 1000);
-// const lighter3 = new Lighter('.lighter-wrapper-3', 1500);
+let lighterOnClass = new LighterClass('.lighter-wrapper-3', 1100);

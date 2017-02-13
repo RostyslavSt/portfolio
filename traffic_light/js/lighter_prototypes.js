@@ -1,18 +1,30 @@
-const Lighter = function (rootElement, timeInterval) {
+const lighterProto = (() => {
     let interval = null;
     let i = 0;
-    this.container = document.querySelector(rootElement);
-    this.circles = [];
-    this.isOn = false;
 
-    this.container.classList.add('lighter');
+    function Constructor(rootElement, timeInterval) {
+        this.container = document.querySelector(rootElement);
+        this.circles = [];
+        this.isOn = false;
+        this.container.classList.add('lighter');
+        this.switcher = null;
+        this.timeInterval = timeInterval;
 
-    this.render = function () {
+        this.render();
+        this.handleEvents();
+
+        if (this.isOn) {
+            this.addInterval();
+        }
+
+    }
+
+    Constructor.prototype.render = function () {
         this.createButton();
         this.createLights();
     };
 
-    this.createButton = function () {
+    Constructor.prototype.createButton = function () {
         this.switcher = document.createElement('div');
 
         this.button = document.createElement('button');
@@ -26,7 +38,7 @@ const Lighter = function (rootElement, timeInterval) {
         this.container.appendChild(this.switcher);
     }
 
-    this.createLights = function () {
+    Constructor.prototype.createLights = function () {
         for (let i = 0; i < 3; i++) {
             let element = document.createElement('div');
 
@@ -41,7 +53,7 @@ const Lighter = function (rootElement, timeInterval) {
         this.circles[2].classList.add('lighter__circle_green');
     }
 
-    this.handleEvents = function () {
+    Constructor.prototype.handleEvents = function () {
         this.circles.forEach((el) => {
             el.addEventListener('click', () => {
                 if (this.isOn) {
@@ -63,17 +75,17 @@ const Lighter = function (rootElement, timeInterval) {
         })
     }
 
-    this.switchOff = function () {
+    Constructor.prototype.switchOff = function () {
         this.circles.forEach((el) => {
             el.classList.remove('active');
         })
     }
-    this.changeColor = function (el) {
+    Constructor.prototype.changeColor = function (el) {
         this.switchOff();
         el.classList.add('active');
     }
 
-    this.addInterval = function () {
+    Constructor.prototype.addInterval = function () {
         interval = setInterval(() => {
             this.changeColor(this.circles[i]);
             if (i < 2) {
@@ -81,21 +93,14 @@ const Lighter = function (rootElement, timeInterval) {
             } else {
                 i = 0;
             }
-        }, timeInterval || 1000);
+        }, this.timeInterval || 1000);
     }
 
-    this.killInterval = function () {
+    Constructor.prototype.killInterval = function () {
         clearInterval(interval);
     };
 
-    this.render();
-    this.handleEvents();
-    if (this.isOn) {
-        this.addInterval();
-    }
-};
+    return Constructor;
+})();
 
-const lighter = new Lighter('.lighter-wrapper', 300);
-
-// const lighter2 = new Lighter('.lighter-wrapper-2', 1000);
-// const lighter3 = new Lighter('.lighter-wrapper-3', 1500);
+let lighterOnProto = new lighterProto('.lighter-wrapper-2', 1000);
