@@ -1,8 +1,0 @@
-/// Немного осветлить цвет
-/// @access public
-/// @param {Color} $color - цвет для осветления
-/// @param {Number} $percentage - процент от `$color` в возвращаемом цвете
-/// @return {Color}
-@function tint($color, $percentage){
-	@return mix(white, $color, $percentage);
-}
