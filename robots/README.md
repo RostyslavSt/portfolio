@@ -1,5 +1,5 @@
 
-#var robot;
+h1 var robot;
 Напишите классы описывающие битву роботов
 
 function Battleground() {
