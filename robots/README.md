@@ -35,7 +35,7 @@ function Weapon(name) {
 
 Пример вывода  
 
-Round 1
+Round 1  
 Robot1 attack with 10 power area damage  
 
 Robot2 receives 10 points damage  
