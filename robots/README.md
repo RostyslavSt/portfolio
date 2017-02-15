@@ -33,14 +33,22 @@ function Weapon(name) {
 В конце в консоле должен быть выведен победитель
 Погибших роботов можно перемещать в какой-то внутренний массив  
 
-Пример вывода
-Round 1
-Robot1 attack with 10 power area damage
-Robot2 receives 10 points damage
-Robot3 receives 10 points damage
-Robot3 out of game
-Round 2
-Robot2 attack with 50 power single damage
+Пример вывода  
+
+Round 1  
+
+Robot1 attack with 10 power area damage  
+
+Robot2 receives 10 points damage  
+
+Robot3 receives 10 points damage  
+
+Robot3 out of game  
+
+Round 2  
+
+Robot2 attack with 50 power single damage  
+
 Robot1 receives 50 points damage
 Robot1 out of game
 Robot2 wins!!!
