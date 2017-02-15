@@ -1,7 +1,6 @@
 
 # var robot;
-Напишите классы описывающие битву роботов  
-
+*Напишите классы описывающие битву роботов*  
 function Battleground() {
 }  
 function Robot(name) {
@@ -9,12 +8,13 @@ function Robot(name) {
 function Weapon(name) {
 }
 
-BattleGround:
+*BattleGround:*  
 
 На поле могут присутствовать несколько роботов, размер передается в конструктор
 Свойства:
-round
-robots
+*round
+*robots
+
 У поля есть методы:
 addRobot() - добавляет робота к битве
 startBattle() - стартует сражение
