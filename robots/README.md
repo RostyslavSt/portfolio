@@ -1,13 +1,16 @@
 
-h1 var robot;
+# var robot;
 Напишите классы описывающие битву роботов
 
 function Battleground() {
 }
+
 function Robot(name) {
 }
+
 function Weapon(name) {
 }
+
 BattleGround:
 На поле могут присутствовать несколько роботов, размер передается в конструктор
 Свойства:
