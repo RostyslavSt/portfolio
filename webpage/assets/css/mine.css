@@ -1,21 +1,35 @@
 .menu-projects {
     text-align: left;
 }
+
 .menu-projects .git-mine {
     margin-left: 11px;
     font-size: 18px;
 }
-.img-course {
+
+
+/*.img-course {
     max-width: 160px;
-}
+}*/
+
 .img-b {
-    width: 80px;
+    max-width: 80px;
     margin-top: 10px;
 }
 
-.iconbox {
-    height: 270px;
+.img-a {
+    max-width: 74px;
 }
+
+.icon-logo {
+    max-width: 80px;
+    text-align: center;
+}
+
+.iconbox {
+    height: 411px;
+}
+
 .plus {
     top: 12px;
 }
