@@ -46,7 +46,8 @@ Robot
 * name
 * weapon
 * alive
-* health (20-50)  
+* health (20-50)
+
 **Методы робота:**
 * attack - осуществление атаки с помощью оружия
 * receiveDamage(points)
